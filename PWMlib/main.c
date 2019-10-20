@@ -8,15 +8,12 @@
  *
  *  Required use soft_pwm_init() or hard_pwm_init function before using PWM
  *  Required use sei() function in main.c
- *
- * 	Libraries required : <avr/io.h> <avr/interrupt.h>
+ * 	Required libraires : <avr/io.h> <avr/interrupt.h>
  *
  *  The library takes about 600 bytes of FLASH memory with sample program
  *  for all 4 software channels and hardware channel active.
  *
  *  MCU used in project is ATmega32
- *
- *
  *
  *  Created on: 3 oct 2019
  *      Author: Norbert Bielak
