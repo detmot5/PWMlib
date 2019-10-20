@@ -1,4 +1,5 @@
 Library for software and hardware PWM operating for AVR uC.
+
 It can be used in light brightness adjustment, controlling DC motor's speed or
 as in example RGB LED control
  
@@ -20,4 +21,5 @@ MCU used in project is ATmega32
 >To start using this lib just move it to workspace in you IDE 
  
    Created on: 3 oct 2019
+   
    Author: Norbert Bielak
