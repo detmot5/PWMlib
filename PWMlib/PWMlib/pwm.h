@@ -51,13 +51,13 @@ typedef uint32_t u32;
 //--------------------------------------------------------------------------
 // 					 SIMPLYFYING PORT ACCESS MACROS
 //--------------------------------------------------------------------------
-// PORT - wyjœcie
+// PORT - output
 #define PORT(x) SPORT(x)
 #define SPORT(x) (PORT##x)
-// PIN - wejœcie
+// PIN - input
 #define PIN(x) SPIN(x)
 #define SPIN(x) (PIN##x)
-// DDR - kierunek
+// DDR - direction
 #define DDR(x) SDDR(x)
 #define SDDR(x) (DDR##x)
 
