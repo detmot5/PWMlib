@@ -76,12 +76,12 @@ sei();
 	  for (u16 i = 0; i <= 255; i++) {
 		 color_set(i, 0, 255 - i);
 		 hard_PWM_write(255-i);
-		_delay_ms(1);
+		_delay_ms(5);
 	  }
 
 	 // Color can also be enteret by hex value
 	 /* color_hex(0xffab02);*/
-//s
+
    }
 }
 
