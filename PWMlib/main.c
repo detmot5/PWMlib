@@ -77,8 +77,7 @@ sei();
 		 color_set(i, 0, 255 - i);
 		 hard_PWM_write(255-i);
 		_delay_ms(5);
-	  }
-
+	  }///sda
 	 // Color can also be enteret by hex value
 	 /* color_hex(0xffab02);*/
 
