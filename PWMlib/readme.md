@@ -7,7 +7,7 @@ Allows using soft and hard PWM in inverting mode or non-inverting mode
  
 I recommend using 16MHZ crystal.
  
->Required use soft_pwm_init() or hard_pwm_init function before using PWM
+>Required use soft_pwm_init() or hard_pwm_init() function before using PWM
 
 >Required use sei() function in main.c
 
