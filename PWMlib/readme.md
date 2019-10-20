@@ -17,7 +17,7 @@ for all 4 software channels and hardware channel active.
  
 MCU used in project is ATmega32
  
- 
+>To start using this lib just move it to workspace in you IDE 
  
    Created on: 3 oct 2019
    Author: Norbert Bielak
