@@ -81,7 +81,7 @@ sei();
 
 	 // Color can also be enteret by hex value
 	 /* color_hex(0xffab02);*/
-//cos
+
    }
 }
 
