@@ -7,7 +7,7 @@ Allows using soft and hard PWM in inverting mode or non-inverting mode
  
 I recommend using 16MHZ crystal.
  
->Required use soft_pwm_init() or hard_pwm_init function before using PWM
+>Required use soft_pwm_init() or hard_pwm_init() function before using PWM
 
 >Required use sei() function in main.c
 
@@ -18,7 +18,7 @@ for all 4 software channels and hardware channel active.
  
 MCU used in project is ATmega32
  
->To start using this lib just move it to workspace in you IDE 
+>To start using this lib just move it to workspace in your IDE 
  
    Created on: 3 oct 2019
    
