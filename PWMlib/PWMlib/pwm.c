@@ -83,7 +83,7 @@ void hard_PWM_init(void){
 
 void soft_PWM_write(u8 channel, u16 width){
 
-#if GND_VCC_ON_SWITCH == 0 // inverting mode (common anode)
+#if NON_INVERTING_MODE == 0 // inverting mode (common anode)
 	  width = 255-width;
 #endif
 
@@ -101,7 +101,7 @@ void soft_PWM_write(u8 channel, u16 width){
 
 void hard_PWM_write(u8 width){
 
-#if GND_VCC_ON_SWITCH == 0 //inverting mode
+#if NON_INVERTING_MODE == 0 //inverting mode
 	width = 255-width;
 #endif
 

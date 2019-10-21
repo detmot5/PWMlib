@@ -34,7 +34,7 @@ typedef uint32_t u32;
 #define USE_HARD_PWM 	1
 
 
-#define GND_VCC_ON_SWITCH 1   // 1 non-inverting mode / 0 - inverting mode
+#define NON_INVERTING_MODE 1   // 1 non-inverting mode / 0 - inverting mode
 
 #define USE_PWM_CHANNEL1	1 // Activating each PWM software chnnel
 #define USE_PWM_CHANNEL2	1 //

@@ -46,6 +46,7 @@ void color_set(u8 red, u8 green, u8 blue){
 	soft_PWM_write(GREEN_CH, green);
 	soft_PWM_write(BLUE_CH, blue);
 }
+
 void color_hex(u32 hex_color){
 	color_set((hex_color & 0xFF0000) >> 16, (hex_color & 0x00FF00) >> 8, (hex_color & 0x0000FF));
 }
@@ -82,6 +83,7 @@ sei();
 	 // Color can also be entered by hex value, for example:
 
 	 /* color_hex(0xffab02);*/
+
 
    }
 }
