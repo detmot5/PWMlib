@@ -27,8 +27,7 @@
 #include <util/delay.h>
 
 #include "pwm.h"
-typedef uint8_t u8;
-typedef uint16_t u16;
+
  // variables used in interrupt
 volatile u8 pwm1, pwm2, pwm3, pwm4;
 
@@ -96,12 +95,13 @@ void soft_PWM_write(u8 channel, u16 width){
 	}
 }
 #endif
+
 	// Width setting on hardware channel
 #if USE_HARD_PWM == 1
 
 void hard_PWM_write(u8 width){
 
-#if GND_VCC_ON_SWITCH == 0
+#if GND_VCC_ON_SWITCH == 0 //inverting mode
 	width = 255-width;
 #endif
 
