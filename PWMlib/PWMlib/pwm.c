@@ -59,8 +59,8 @@ void soft_PWM_init(void){
 
 
 	// Timer mode - normal
-	TCCR0 |= (1<<CS00); // prescaler /1
-	TIMSK |= (1<<TOIE0); // OVF interrupts permission
+	TCCR0 |= (1<<CS00); 					 // prescaler /1
+	TIMSK |= (1<<TOIE0); 					 // OVF interrupts permission
 	TCNT0 = 100;
 
 }
@@ -69,10 +69,12 @@ void soft_PWM_init(void){
  	 	 // hardware PWM
 #if USE_HARD_PWM == 1
 void hard_PWM_init(void){
-	DDR(HARD_PWM_PORT) |= (1<<HARD_PWM_PIN);
-	TCCR2 |= (1<<WGM20) | (1<<WGM21); //  fastPWM mode
-	TCCR2 |= (1<<CS20); // prescaler /1
-	TCCR2 |= (1<<COM21); // non-inverting mode
+
+	DDR(HARD_PWM_PORT) |= (1<<HARD_PWM_PIN); // Hard PWM pin - output
+
+	TCCR2 |= (1<<WGM20) | (1<<WGM21); 		 //  fastPWM mode
+	TCCR2 |= (1<<CS20); 					 // prescaler /1
+	TCCR2 |= (1<<COM21); 				     // non-inverting mode
 	OCR2 = 0;
 }
 #endif
@@ -83,7 +85,7 @@ void hard_PWM_init(void){
 
 void soft_PWM_write(u8 channel, u16 width){
 
-#if NON_INVERTING_MODE == 0 // inverting mode (common anode)
+#if NON_INVERTING_MODE == 0					 // inverting mode (common anode)
 	  width = 255-width;
 #endif
 
@@ -101,7 +103,7 @@ void soft_PWM_write(u8 channel, u16 width){
 
 void hard_PWM_write(u8 width){
 
-#if NON_INVERTING_MODE == 0 //inverting mode
+#if NON_INVERTING_MODE == 0 			     //inverting mode
 	width = 255-width;
 #endif
 
