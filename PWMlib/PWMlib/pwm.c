@@ -56,8 +56,7 @@ static inline void soft_pwm_dir_out(void){
 void soft_PWM_init(void){
 	// PWM channels - output
 	soft_pwm_dir_out();
-
-
+	
 	// Timer mode - normal
 	TCCR0 |= (1<<CS00); 					 // prescaler /1
 	TIMSK |= (1<<TOIE0); 					 // OVF interrupts permission
